@@ -1,0 +1,21 @@
+<canvas width="800" height="600"></canvas>
+
+<script>
+
+	function cuadradoDeColor(x,y,color){
+		var pantalla =document.querySelector("canvas");
+		var pincel=pantalla.getContext("2d");
+		pincel.fillStyle=color;
+		pincel.fillRect(x,y,50,50);
+		pincel.strokeStyle="black";
+		pincel.strokeRect(x,y,50,50);
+	}
+	
+	cuadradoDeColor(0,0,"green");
+	cuadradoDeColor(750,0,"yellow");
+	cuadradoDeColor(350,300,"black");
+	cuadradoDeColor(0,550,"red");
+	cuadradoDeColor(750,550,"blue");
+
+
+</script>
